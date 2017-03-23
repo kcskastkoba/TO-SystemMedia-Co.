@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/csstest.css">
+		<title>
+			生徒管理システム
+		</title>
+	</head>
+	<body>
+		<div id="site">
+		<div id="caption">
+			<header>
+				<h1>
+					生徒管理システム
+				</h1>
+			</header>
+			<section>
+				<h2>
+					コンテンツ
+				</h2>
+				
+							<h3>学生一覧</h3>
+			<form action="StudentSelectServlet" method="get">
+				<input type="submit" value="一覧">
+			</form>
+			<hr>
+
+			<h3>学生検索</h3>
+			<form action="StudentSearchServlet" method="get">
+				学生番号：<input type="text" size="4" name="selectNo">
+				<input type="submit" value="検索"> <input type="reset" value="リセット">
+			</form>
+			<hr>
+
+			<h3>学生登録</h3>
+			<form action="StudentInsertServlet" method="get">
+				学生番号：<input type="text" size="4" name="studentNo">
+				氏名：<input type="text" size="15" name="studentName">
+				学年：<input type="text" size="1" name="studentYear">
+				<input type="submit" value="登録"> <input type="reset" value="リセット">
+			</form>
+			<hr>
+			
+			
+
+			<h3>学生更新/削除</h3>
+			<a href="javascript:window.open('studentUpdatePage.jsp', 'mywindow1', 'width=400, height=300, menubar=no, toolbar=no, scrollbars=yes');">更新</a>
+			<!-->
+			<form action="StudentUDServlet" method="get">
+				<input type="submit" value="更新/削除">
+			</form>
+			-->
+			
+			<hr>
+				
+			</section>
+			
+			
+			<nav>
+				<h2>
+					メニュー
+				</h2>
+				<br>
+				<a href="javascript:window.open('index2.html', 'mywindow1', 'width=400, height=300, menubar=no, toolbar=no, scrollbars=yes');">学生追加</a>
+				<br>
+				<a href="javascript:window.open('index2.html', 'mywindow1', 'width=400, height=300, menubar=no, toolbar=no, scrollbars=yes');">学生検索</a>
+				<br>
+				<a href="javascript:window.open('index2.html', 'mywindow1', 'width=400, height=300, menubar=no, toolbar=no, scrollbars=yes');">学生ソート</a>
+				<br>
+				<a href="javascript:window.open('index2.html', 'mywindow1', 'width=400, height=300, menubar=no, toolbar=no, scrollbars=yes');">選択削除</a>
+			</nav>
+			<footer>
+				<h2>
+					フッター
+				</h2>
+			</footer>
+		</div>
+		</div>
+	</body>
+</html>

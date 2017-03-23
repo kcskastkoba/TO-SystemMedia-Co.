@@ -1,0 +1,14 @@
+DB名
+┗STUDENTDB
+テーブル名
+┗STUDENT
+属性
+┣STUDENTNO(学生番号・主キー)
+┣STUDENTCLASS(学生所属クラス)
+┣STUDENTNAME(学生氏名)
+┣STUDENTADDYEAR(学生の入学年度)
+┣STUDENTSTOPCOUNT(留年カウント)
+┗SCHOOLYEAR(学年)
+
+DBの入学年度と学年はウェブ入力のみPHPからSQLで自動計算
+初めから入れておくもののみ指定してINSERTですべて入力
